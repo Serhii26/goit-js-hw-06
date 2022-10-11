@@ -12,24 +12,24 @@ const boxesCharge = document.querySelector('#boxes');
 inputEl.addEventListener('input', inputValue);
 buttonCreate.addEventListener('click', creteBoxes);
 
-function inputValue(event){
-  return event.currentTarget.value;
-}
+// function inputValue(event){
+//   return event.currentTarget.value;
+// }
 
-function creteBoxes(amount){
-   boxesCharge.innerHTML = '';
-  amount = Number(inputEl.value);
-  for (let i = 0; i < amount; i += 1) {
-    const box = document.createElement("div");
+// function creteBoxes(amount){
+//    boxesCharge.innerHTML = '';
+//   amount = Number(inputEl.value);
+//   for (let i = 0; i < amount; i += 1) {
+//     const box = document.createElement("div");
     
-    box.style.width = String(30 + 10 * i) + 'px';
-    box.style.heigth = String(30 + 10 * i) + 'px';
-    box.style.backgroundColor = getRandomHexColor();
-    boxesCharge.appendChild(box);
-    console.log(boxesCharge);
-  }
+//     box.style.width = String(30 + 10 * i) + 'px';
+//     box.style.heigth = String(30 + 10 * i) + 'px';
+//     box.style.backgroundColor = getRandomHexColor();
+//     boxesCharge.appendChild(box);
+//     console.log(boxesCharge);
+//   }
  
-}
+// }
 
 // const inputNumberRef = document.querySelector('input');
 // const createButton = document.querySelector('[data-create]');
