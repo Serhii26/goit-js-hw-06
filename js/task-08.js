@@ -2,10 +2,14 @@ const form = document.querySelector('.login-form');
 
 form.addEventListener ('submit', (event) => {
     event.preventDefault();
-    const {
+    const  {
         elements: { email, password } 
     } = event.currentTarget;
-     console.log(email.value, password.value);
+    const formData = {
+      email: email.value,
+      password: password.value
+    }
+     console.log(formData);
      if (email.value === "" || password.value === "") {
         alert ('Please fill in the blanks!');
         
@@ -13,5 +17,6 @@ form.addEventListener ('submit', (event) => {
         email: email.value,
         password: password.value,};}
      event.currentTarget.reset();
+     
 });
 console.log(form);
